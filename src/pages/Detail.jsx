@@ -14,15 +14,12 @@ import {
 } from "../services/helper";
 
 export const loader = async ({ params }) => {
-  const { data: movie } = await getMovieDetail(params.movieId);
-  const { data: credit } = await getMovieCredit(params.movieId);
-  return { movie, credit };
+  const { data } = await getMovieDetail(params.movieId);
+  return data;
 };
 
 const Detail = () => {
-  const { movie, credit } = useLoaderData();
-  console.log(movie);
-  console.log(credit);
+  const movie = useLoaderData();
 
   const imgUrl = "https://image.tmdb.org/t/p/original/";
 

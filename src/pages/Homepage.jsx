@@ -37,7 +37,6 @@ const Homepage = () => {
   };
 
   const fetchMovieByGenre = async () => {
-    console.log(selectedGenres.join(","));
     if (selectedGenres.length !== 0) {
       setMovieLoading(true);
       const { data } = await getMoviesByGenres(selectedGenres.join(","), page);
