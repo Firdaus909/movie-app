@@ -24,7 +24,7 @@ const Detail = () => {
   console.log(movie);
   console.log(credit);
 
-  const imgUrl = import.meta.env.VITE_IMAGE_URL;
+  const imgUrl = "https://image.tmdb.org/t/p/original/";
 
   return (
     <>

@@ -3,7 +3,7 @@ import { Button, Carousel, Flex, Skeleton } from "antd";
 import { getTrending } from "../services/services";
 
 const Hero = () => {
-  const imgUrl = import.meta.env.VITE_IMAGE_URL;
+  const imgUrl = 'https://image.tmdb.org/t/p/original/';
   
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);

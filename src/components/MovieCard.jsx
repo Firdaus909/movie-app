@@ -3,7 +3,7 @@ import { Card, Divider, Space, Typography } from "antd";
 import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie, genre }) => {
-  const imgUrl = import.meta.env.VITE_IMAGE_URL;
+  const imgUrl = 'https://image.tmdb.org/t/p/original/';
   return (
     <Link to={`detail/${movie.id}`}>
       <Card
